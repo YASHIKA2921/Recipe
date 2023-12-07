@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love from Grandma</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Bodoni MT';
+      margin: 0;
+      padding: 0;
+      background-color: #87CEFA; /* Light Blue */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    header {
+      background-color: #c8a2c8; /* Lilac */
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      flex: 1 100%;
+    }
+
+    nav {
+      background-color: #add8e6; /* Baby Blue */
+      padding: 0.5em;
+      flex: 1 100%;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1em;
+    }
+
+    article {
+      margin: 1em;
+      background-color: rgba(55, 235, 200, ); /* White with opacity to blend with the background */
+      padding: 1em;
+      border-radius: 8px;
+      flex: 3 70%;
+    }
+
+    .recipe-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .ingredients {
+      flex: 1 30%;
+    }
+
+    .ingredients img {
+      width: 100%;
+      height: auto;
+    }
+
+    .instructions {
+      margin-top: 1em;
+    }
+
+    footer {
+      background-color: #c8a2c8; /* Lilac */
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .sticker {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+    }
+
+    .sticker-left {
+      top: 10px;
+      left: 10px;
+    }
+
+    .sticker-right {
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <span class="sticker sticker-left">🌟</span>
+      Love from Grandma
+      <span class="sticker sticker-right">🌟</span>
+    </h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="yourstories.html">Your Stories</a>
+    <a href="instructions.html">Instructions</a>
+  </nav>
+
+  <article>
+    <header>
+      <h1>Chocolate Chip Cookies</h1>
+      <img src="cookies.jpg" alt="Chocolate Chip Cookies" class="recipe-img">
+    </header>
+    <section class="ingredients">
+      <h2>Ingredients</h2>
+      <ul>
+        <li>1 cup softened butter</li>
+        <li>1 cup white sugar</li>
+        <li>2 cups all-purpose flour</li>
+        <!-- More ingredients -->
+      </ul>
+      <img src="ingredients.jpg" alt="Ingredients" class="recipe-img" width='70' height='70' alignment="right">
+    </section>
+    <section class="instructions">
+      <h2>Instructions</h2>
+      <ol>
+        <li>Preheat oven to 350 degrees F (175 degrees C).</li>
+        <li>Cream together the butter, white sugar, and brown sugar until smooth.</li>
+        <li>Beat in the eggs one at a time, then stir in the vanilla.</li>
+        <!-- More steps -->
+      </ol>
+    </section>
+  </article>
+
+  <footer>
+    <p>Recipe by Grandma's Cookbook</p>
+  </footer>
+</body>
+</html>

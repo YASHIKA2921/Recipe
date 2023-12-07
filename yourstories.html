@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Stories</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Bodoni MT';
+      margin: 0;
+      padding: 0;
+      background-color: #87CEFA; /* Light Blue */
+    }
+
+    header {
+      background-color: #c8a2c8; /* Lilac */
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      background-color: #add8e6; /* Baby Blue */
+      padding: 0.5em;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1em;
+    }
+
+    article {
+      margin: 1em;
+      background-color: rgba(55, 235, 200, 0.9); /* White with opacity to blend with the background */
+      padding: 1em;
+      border-radius: 8px;
+    }
+
+    .story {
+      margin-bottom: 2em;
+    }
+
+    .read-more-btn {
+      background-color: #add8e6; /* Baby Blue */
+      color: #fff;
+      border: none;
+      padding: 0.5em 1em;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .read-more-content {
+      display: none;
+      margin-top: 1em;
+    }
+
+    .read-more-btn:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Stories</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="your-stories.html">Your Stories</a>
+    <a href="instructions.html">Instructions</a>
+  </nav>
+
+  <article>
+    <div class="story">
+      <h2>Blueberry Pancake Delight</h2>
+      <p>Hi, I'm Emily! One of my fondest memories in the kitchen involves making blueberry pancakes with my grandma. The aroma of fresh blueberries and the sizzling sound as they hit the hot griddle instantly takes me back to my childhood. Every bite is a burst of sweet and tangy goodness. Read more...</p>
+      <button class="read-more-btn" onclick="toggleReadMore('blueberry-pancakes')">Read More</button>
+      <div class="read-more-content" id="blueberry-pancakes">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>1 cup all-purpose flour</li>
+          <li>1 tablespoon sugar</li>
+          <li>1 teaspoon baking powder</li>
+          <!-- More ingredients -->
+        </ul>
+        <h3>Instructions</h3>
+        <ol>
+          <li>In a bowl, mix flour, sugar, and baking powder.</li>
+          <li>Add milk and whisk until smooth.</li>
+          <li>Gently fold in fresh blueberries.</li>
+          <!-- More steps -->
+        </ol>
+      </div>
+    </div>
+
+    <div class="story">
+      <h2>Lemon Chicken Extravaganza</h2>
+      <p>Hello, I'm Alex! My favorite recipe is my grandma's lemon chicken. The zesty flavor of lemon combined with the tender, juicy chicken is simply unbeatable. The golden brown color and the irresistible aroma make it a family favorite. Read more...</p>
+      <button class="read-more-btn" onclick="toggleReadMore('lemon-chicken')">Read More</button>
+      <div class="read-more-content" id="lemon-chicken">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>4 boneless, skinless chicken breasts</li>
+          <li>1/4 cup olive oil</li>
+          <li>2 lemons (juiced and zested)</li>
+          <!-- More ingredients -->
+        </ul>
+        <h3>Instructions</h3>
+        <ol>
+          <li>Marinate chicken in lemon juice, zest, and olive oil.</li>
+          <li>Bake until the chicken is cooked through and golden.</li>
+          <li>Serve with your favorite side dishes.</li>
+          <!-- More steps -->
+        </ol>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <p>Recipe by Grandma's Cookbook</p>
+  </footer>
+
+  <script>
+    function toggleReadMore(storyId) {
+      const readMoreContent = document.getElementById(storyId);
+      readMoreContent.style.display = readMoreContent.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

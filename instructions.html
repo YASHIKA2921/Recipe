@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructions</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #87CEFA; /* Light Blue */
+    }
+
+    header {
+      background-color: #c8a2c8; /* Lilac */
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      background-color: #add8e6; /* Baby Blue */
+      padding: 0.5em;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1em;
+    }
+
+    article {
+      margin: 1em;
+      background-color: rgba(255, 255, 255, 0.9); /* White with opacity to blend with the background */
+      padding: 1em;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #c8a2c8; /* Lilac */
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .recipe {
+      margin-bottom: 2em;
+    }
+
+    .read-more-btn {
+      background-color: #add8e6; /* Baby Blue */
+      color: #fff;
+      border: none;
+      padding: 0.5em 1em;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .read-more-content {
+      display: none;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Instructions</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ingredients.html">Ingredients</a>
+    <a href="instructions.html">Instructions</a>
+  </nav>
+
+  <article>
+    <div class="recipe">
+      <h2>Chocolate Chip Cookies</h2>
+      <p>This classic cookie recipe is loved by all ages. The perfect combination of butter, sugar, and chocolate chips makes these cookies irresistible.</p>
+      <button class="read-more-btn" onclick="toggleReadMore('chocolate-chip-cookies')">Read More</button>
+      <div class="read-more-content" id="chocolate-chip-cookies">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>1 cup softened butter</li>
+          <li>1 cup white sugar</li>
+          <li>2 cups all-purpose flour</li>
+          <!-- More ingredients -->
+        </ul>
+        <h3>Instructions</h3>
+        <ol>
+          <li>Preheat oven to 350 degrees F (175 degrees C).</li>
+          <li>Cream together the butter, white sugar, and brown sugar until smooth.</li>
+          <li>Beat in the eggs one at a time, then stir in the vanilla.</li>
+          <!-- More steps -->
+        </ol>
+      </div>
+    </div>
+
+    <div class="recipe">
+      <h2>Strawberry Milkshake</h2>
+      <p>A refreshing and fruity milkshake made with fresh strawberries, milk, and a scoop of vanilla ice cream. Perfect for a hot day!</p>
+      <button class="read-more-btn" onclick="toggleReadMore('strawberry-milkshake')">Read More</button>
+      <div class="read-more-content" id="strawberry-milkshake">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>1 cup fresh strawberries</li>
+          <li>2 cups milk</li>
+          <li>1 scoop vanilla ice cream</li>
+          <!-- More ingredients -->
+        </ul>
+        <h3>Instructions</h3>
+        <ol>
+          <li>Wash and hull the strawberries.</li>
+          <li>In a blender, combine strawberries, milk, and vanilla ice cream.</li>
+          <li>Blend until smooth and creamy.</li>
+          <!-- More steps -->
+        </ol>
+      </div>
+    </div>
+
+    <div class="recipe">
+      <h2>Pasta</h2>
+      <p>A classic pasta dish with your choice of sauce, whether it's marinara, Alfredo, or pesto. Comfort food at its finest!</p>
+      <button class="read-more-btn" onclick="toggleReadMore('pasta')">Read More</button>
+      <div class="read-more-content" id="pasta">
+        <h3>Ingredients</h3>
+        <ul>
+          <li>2 cups pasta</li>
+          <li>1 cup pasta sauce</li>
+          <li>1/2 cup grated Parmesan cheese</li>
+          <!-- More ingredients -->
+        </ul>
+        <h3>Instructions</h3>
+        <ol>
+          <li>Cook the pasta according to package instructions.</li>
+          <li>Heat the pasta sauce in a separate pan.</li>
+          <li>Combine the cooked pasta with the sauce and toss until well coated.</li>
+          <!-- More steps -->
+        </ol>
+      </div>
+    </div>
+  </article>
+
+  <footer>
+    <p>Recipe by Grandma's Cookbook</p>
+  </footer>
+
+  <script>
+    function toggleReadMore(recipeId) {
+      const readMoreContent = document.getElementById(recipeId);
+      readMoreContent.style.display = readMoreContent.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
